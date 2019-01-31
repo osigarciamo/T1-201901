@@ -9,10 +9,10 @@ import model.data_structures.IArregloDinamico;;
 public class MVCExample {
 
 		private static void printMenu(){
-			System.out.println("1. Crear Arreglo Dinamico de Strings");
-			System.out.println("2. Agregar String");
-			System.out.println("3. Buscar String");
-			System.out.println("4. Eliminar String");
+			System.out.println("1. Crear Arreglo Dinamico de Generics");
+			System.out.println("2. Agregar dato Generics");
+			System.out.println("3. Buscar dato Generics");
+			System.out.println("4. Eliminar dato Generics");
 			System.out.println("5. Exit");
 			System.out.println("Dar el numero de opcion a resolver, luego oprimir tecla Return: (e.g., 1):");
 		}
@@ -38,7 +38,7 @@ public class MVCExample {
 						break;
 
 					case 2:
-						System.out.println("--------- \nDar cadena (simple) a ingresar: ");
+						System.out.println("--------- \nDar dato Generics (simple) a ingresar: ");
 						dato = lector.next();
 						Controller.agregar(dato);
 						System.out.println("Dato agregado");
@@ -46,7 +46,7 @@ public class MVCExample {
 						break;
 
 					case 3:
-						System.out.println("--------- \nDar cadena (simple) a buscar: ");
+						System.out.println("--------- \nDar dato Generics (simple) a buscar: ");
 						dato = lector.next();
 						respuesta = Controller.buscar(dato);
 						if ( respuesta != null)
@@ -61,7 +61,7 @@ public class MVCExample {
 						break;
 
 					case 4:
-						System.out.println("--------- \nDar cadena (simple) a eliminar: ");
+						System.out.println("--------- \nDar dato Generics (simple) a eliminar: ");
 						dato = lector.next();
 						respuesta = Controller.eliminar(dato);
 						if ( respuesta != null)
